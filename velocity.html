@@ -1,0 +1,257 @@
+<html>
+
+<head>
+    <link rel="icon" href="Website_LOGO_Final.png" type="image/x-icon">
+    <title> HiRes Displays - Digital: Technology redesigned </title>
+
+    <link rel="stylesheet" href="TopBarCSS.css">
+    <link rel="stylesheet" href="BarCSS.css">
+    <link rel="stylesheet" href="Audio.css">
+    <link rel="stylesheet" href="specifications.css">
+    <link rel="stylesheet" href="ProductsSlideshow.css">
+    <link rel="stylesheet" href="SpecsTable.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            color: #90e0ef;
+            text-decoration: none;
+        }
+
+        #background-video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 4.3vw;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 400;
+            color: #3eb7dc;
+        }
+
+        h3 {
+            font-size: 2.4vw;
+            font-family: "machinen", "jerseym54", "Geneva", "Roboto", "Helvetica", "Arial", "Microsoft JhengHei", sans-serif;
+            font-weight: 1400;
+
+            color: #f5ba00;
+        }
+
+        h4 {
+            font-size: 1.8vw;
+            font-family: "sans serif";
+            font-weight: 1400;
+
+            color: #bd9c30;
+        }
+
+        p {
+            font-size: 1.75vw;
+            font-family: 'Courier New', Courier, monospace;
+            color: 3eb7dc;
+            font-weight: 600;
+        }
+
+        #myVideo {
+            width: 100%;
+        }
+
+        .wrap-flex2 {
+            display: flex;
+            width: 99vw;
+        }
+    </style>
+</head>
+
+<body bgcolor="#8ecae6">
+    <video id="background-video" autoplay loop muted>
+        <source src="Background.mp4" type="video/mp4">
+    </video>
+    <div class="wrap-flex">
+        <div id="topBar">
+            <table>
+                <tr>
+                    <td id="logo"></td>
+                    <td id="topText"><a href="Digital.html">Home</a></td>
+                    <td id="topText"><a href="#gotoaboutus">About Us</a></td>
+                    <td id="topText"><a href="Support.html">Support</a></td>
+                    <td id="topText">
+                        <div class="dropdown">
+                            <button class="dropbtn">Products</button>
+                            <div class="dropdown-content">
+                                <a href="xtreme.html">Xtreme Motherboards</a>
+                                <a href="hiRes.html">HiRes Displays</a>
+                                <a href="velocity.html">Thermal Velocity Products</a>
+                            </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="rectangle">
+            <a id="buyNowText" href="http://www.google.com">BUY NOW</a>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var a = document.getElementById("buyNowText");
+            a.onclick = function () {
+
+                window.alert("We require $50 Mil to start actual development. This is a concept.")
+
+                return false;
+            }
+        }</script>
+        
+    <br><br>
+
+    <div class="XtremeMotherboards">
+        <video autoplay muted loop id="myvideo">
+            <source src="Cooling.mp4" type="video/mp4">
+        </video>
+
+        <h1>Thermal Velocity Cooling</h1>
+        <h3>Cooler. Better. Vibrant.</h3>
+        <h4 id="heading1">Thermal Velocity Coolant</h4>
+        <p id="para1">
+            Cooling is one of the biggest challanges while making a tech product. From computers to your toaster, the
+            central processor of the product (The CPU) produces a lot of a heat and needs to be cooled to increase its
+            longevity significantly. Many other parts also require cooling. For efficient water cooling, instead of
+            using water, a specalized liquid often called a coolant is used. Our products consists of a metalloid
+            element
+            "Graphene" which has excellent heat absorption. Apart from cooling your components chilly, it also looks
+            beautiful in the loop. Sale starts this fall.
+        </p>
+        <h4 id="heading2">Thermal Velocity Paste</h4>
+        <p id="para2">
+            For efficient water cooling, instead of using water, a specalized liquid often called a coolant. Our
+            products consists of a metalling element "Graphene" which has excellent heat absorption. Apart from cooling
+            your components chilly, it also looks beautiful in the loop. Sale starts this fall.
+        </p>
+    </div>
+    </div>
+
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+        var Image_Id = document.getElementById('getImage');
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                Image_Id.src = "pause.png";
+            } else {
+                video.pause();
+                Image_Id.src = "play.png";
+            }
+        }
+    </script>
+    <br>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade-in" style="background-image:url('Cooling/1.png');">
+            <div class="text">Our display technology in products.</div>
+        </div>
+
+        <div class="mySlides fade-in" style="background-image:url('Cooling/2.png');">
+            <div class="text">Our display technology in products.</div>
+        </div>
+
+        <div class="mySlides fade-in" style="background-image:url('Cooling/3.png');">
+            <div class="text">Our display technology in products.</div>
+        </div>
+
+        <div class="mySlides fade-in" style="background-image:url('Cooling/4.png');">
+            <div class="text">Our display technology in products.</div>
+        </div>
+
+        <div class="mySlides fade-in" style="background-image:url('Cooling/5.png');background-position-y: bottom;">
+            <div class="text">Our display technology in products.</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="index" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <script src="Slideshow.js"></script>
+    <BR><BR><BR>
+
+    <table class="specs">
+        <tr>
+            <td id="heading">Digital TVC-E5 Air Cooler</th>
+            <td rowspan="2"> <img src="AirCooler.png" width="500px"></th>
+        </tr>
+        <tr>
+            <td id="content">
+                Tailored to provide superior RAM and PCIe compatibility, the TVC-E5 is an asymmetrical single fan
+                version of Digital flagship model, the TVC-E5. Thanks to its asymmetrical design, the
+                TVC-E5 clears the top PCIe slot on most µATX and ATX motherboards. At the same time, the single fan
+                setup and recessed lower fins guarantee 100% RAM compatibility with memory modules of up to 65mm height.
+                Users who have sufficient room can also upgrade the cooler with either a 120mm or round 140mm fan on the
+                front fin stack for further improved performance in dual fan mode. Topped off with the trusted,
+                pro-grade SecuFirm2™ multi-socket mounting system, Digital's proven D2-F5 thermal compound and full 15
+                years manufacturer’s warranty, the TVC-E5 forms a complete premium quality solution that combines dual
+                tower efficiency with excellent compatibility and flexible upgrade options.
+            </td>
+        </tr>
+    </table>
+
+    <table class="specs">
+        <tr>
+            <td id="heading">Digital TVX AIO Cooler</th>
+            <td rowspan="2" id="content">
+                The refreshed Digital TVX Series is a must-have for any build, providing better cooling, stunning visual
+                effects, and intuitive installation. You can fine-tune settings with CAM’s software interface, ensuring
+                optimal performance in even the most intense gaming sessions. The new TVX series maintains the
+                customizable lighting effects and quiet performance of previous generations and adds a HUE 2 connector
+                for even more RGB options. With a re-designed cap and larger infinity mirror ring LED, the new TVX
+                delivers an amazing experience in RGB liquid cooling, backed by a 6-year warranty.
+            </td>
+        </tr>
+        <tr>
+            <td> <img src="AIO.png" width="500px"></th>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <audio id="BGmusic" autoplay loop>
+        <source src="audiobg.mp3">
+    </audio>
+
+    <button id='AudioBtn' onclick="amyFunction()"><img id='musicImg' height="50px" src="buttons/play1.png"></button>
+
+    <script src="Audio.js"></script>
+
+    <div class="sticky">
+        Copyright © 2022, Digital Inc. All Rights Reserved. | <a target="_blank"
+            href="https://tinyurl.com/yeyvwd5y">Privacy Policy </a>| Terms of Service
+    </div>
+
+    <div class="fixed">
+        LIMITED TIME SALE! 50% OFF AT ALL PRODUCTS! LIMITED TIME SALE!
+    </div>
+</body>
+
+</html>

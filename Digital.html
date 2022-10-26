@@ -1,0 +1,471 @@
+<html>
+
+<head>
+    <link rel="icon" href="Website_LOGO_Final.png" type="image/x-icon">
+    <title> Home - Digital: Technology redesigned </title>
+
+    <script>
+        window.alert("Welcome to Digital. Technology redesigned! \nMade By Ayush Verma, Tamim Ashraf and Raghav Aggarwal.");
+    </script>
+
+    <link rel="stylesheet" href="TopBarCSS.css">
+
+    <link rel="stylesheet" href="BarCSS.css">
+
+    <link rel="stylesheet" href="Audio.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            color: #90e0ef;
+            text-decoration: none;
+        }
+
+        #background-video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        /* Slideshow container starts*/
+        .slideshow-container {
+            top: 0px;
+
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+        }
+
+        .mySlides {
+            display: none;
+            z-index: -1;
+            height: 100%;
+            background-size: cover;
+            transition: 1s ease;
+        }
+
+        .prev,
+        .next {
+            top: 50%;
+            padding: 16px;
+
+            width: auto;
+            position: absolute;
+
+            cursor: pointer;
+            transition: 0.6s ease;
+            user-select: none;
+
+            border-radius: 0 2px 0 2px;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .prev {
+            left: 20px;
+        }
+
+        .next {
+            right: 40px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .text {
+            padding: 8px 12px;
+            margin-left: 50%;
+            bottom: 5px;
+            margin-bottom: calc(2rem + 5px);
+
+            transform: translateX(-50%);
+            position: absolute;
+            display: inline-block;
+
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            font-family: "Gill Sans MT";
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .dot {
+            top: 3rem;
+
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+
+            border-radius: 50%;
+            background-color: #bbb;
+            height: 15px;
+            width: 15px;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        .dot:hover {
+            background-color: #534e4e;
+        }
+
+        .fade-in {
+            animation-name: fade-in;
+            animation-duration: 1s;
+        }
+
+        .fade-out {
+            animation-name: fade-out;
+            animation-duration: .5s;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade-out {
+            from {
+                opacity: 1
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+        /* Slideshow ends */
+
+        div.AboutThisProject {
+            padding: 50px 25px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            font-size: 20px;
+            border-radius: 30px;
+
+            font-family: 'Gill Sans MT';
+
+
+            background-image: url('blurBG.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            overflow-x: hidden;
+
+            /*background-color: #3eb7dc;*/
+            border: solid #70d6ff;
+            color: #f8edeb;
+        }
+
+        div.Tech {
+            padding: 50px 25px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            font-size: 20px;
+            border-radius: 30px;
+            border: solid #70d6ff;
+            font-family: 'Gill Sans MT';
+
+
+            background-image: url('blurBG.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            overflow-x: hidden;
+            color: #3eb7dc;
+        }
+
+        div.Tech h1,
+        div.AboutThisProject h1 {
+            margin-bottom: 20px;
+            margin-top: -25px;
+        }
+
+        .wrap-flex2 {
+            display: flex;
+            width: 99vw;
+        }
+
+        div.CanYouTrustUs {
+            margin: 25px 35px 25px 20px;
+            position: relative;
+            border: solid #e3d5ca;
+            border-radius: 40px;
+        }
+
+        div.CanYouTrustUs p {
+            padding: 20px;
+
+            top: 0px;
+            position: absolute;
+            border-radius: 40px;
+
+            font-family: 'Courier New';
+            font-size: 1.8vw;
+            color: #f1f1f1;
+        }
+
+        #myVideo {
+            border-radius: 40px;
+            width: 100% !important;
+        }
+
+        #AboutOurCompanyButton {
+            padding-bottom: 10px;
+
+            bottom: 0px;
+            left: 50%;
+
+            position: absolute;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.0);
+        }
+
+        #getImage{
+            width: 3vw;
+            height: 3vw;
+        }
+
+        div.AboutUS {
+            margin: 15px 75px 15px 75px;
+            padding: 25px 25px 0 25px;
+            background-image: linear-gradient(#00b4d8, #0096c7, #0077b6);
+            color: #154194;
+            font-size: 160%;
+            border-radius: 30px;
+            margin-top: 50px;
+            font-family: "century gothic";
+        }
+
+        div.AboutUS h1 {
+            padding-left: 25px;
+            margin: 0;
+
+            display: inline-block;
+
+            font-family: freestyle script;
+            font-size: 500%;
+        }
+
+        div.AboutUS img {
+            margin: 40px 10px 10px 20px !important;
+
+            height: calc(1764px/5);
+            width: calc(1560px/5);
+            float: right;
+            shape-outside: circle();
+        }
+
+        .dark-overlay {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            z-index: 101;
+            background-color: black;
+            opacity: 0.1;
+            user-select: none;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body bgcolor="#8ecae6">
+    <div class="wrap-flex">
+        <div id="topBar">
+            <table>
+                <tr>
+                    <td id="logo"></td>
+                    <td id="topText"><a href="Digital.html">Home</a></td>
+                    <td id="topText"><a href="#gotoaboutus">About Us</a></td>
+                    <td id="topText"><a
+                            href="Support.html">Support</a></td>
+                    <td id="topText">
+                        <div class="dropdown">
+                            <button class="dropbtn">Products</button>
+                            <div class="dropdown-content">
+                                <a href="xtreme.html">Xtreme Motherboards</a>
+                                <a href="hiRes.html">HiRes Displays</a>
+                                <a href="velocity.html">Thermal Velocity Products</a>
+                            </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="rectangle">
+            <a id="buyNowText" href="http://www.google.com">BUY NOW</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var a = document.getElementById("buyNowText");
+            a.onclick = function () {
+
+                window.alert("We require $50 Mil to start actual development. This is a concept.")
+
+                return false;
+            }
+        }</script>
+
+    <div class="slideshow-container">
+        <div class="dark-overlay"></div>
+        <div class="mySlides fade-in" style="background-image:url('assets/1.jpg');">
+            <div class="text">Productivity comes when DIGITAL is around.</div>
+        </div>
+
+        <div class="mySlides fade-in" style="background-image:url('assets/2.jpg');">
+            <div class="text">The best quality for our loyal customers.</div>
+        </div>
+
+        <div class="mySlides fade-in" style="background-image:url('assets/3.jpg');">
+            <div class="text">Best design and specs in the industry at never before seen prices.</div>
+        </div>
+
+        <div class="mySlides fade-in" style="background-image:url('assets/4.jpg');">
+            <div class="text">Gaming on our latest hi-res display!</div>
+        </div>
+
+        <div class="mySlides fade-in" style="background-image:url('assets/5.jpg');">
+            <div class="text">Keep out for upcomming launches!</div>
+        </div>
+
+        <div class="mySlides fade-in" style="background-image:url('assets/6.png');background-position-y: bottom;">
+            <div class="text">Make your friends jealous with this.</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="index" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <script src="slideshow.js"></script>
+
+    <img style="height:95vh" scr="nolink.link">
+
+    <div class="wrap-flex2">
+        <div class="AboutThisProject">
+            <h1>About<br>This Project</h1>
+            <p>Created By the students of Cambridge School Indirapuram, this is our take of Ryan International's
+                Hacka.py event "Product prototype". The project is made
+                with HTML5, CSS JavaScript. Entire design aspect of this project is made with the streamlined
+                help of CSS for e.g. to develop the slideshow module with integration of JS.
+            </p>
+        </div>
+        <div class="Tech">
+            <h1>About our vision as A<br> revolutionary tech company.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </div>
+    </div>
+
+    <hr width="0px" id="gotoproducts">
+
+    <div class="CanYouTrustUs">
+        <video autoplay muted loop id="myVideo">
+            <source src="CanYouTrustUs.mp4" type="video/mp4">
+        </video>
+
+        <p style="text-shadow: 2px 2px 5px black">
+            About Our Company <br>
+            For a company, trust is a major factor which helps us to continue making the best products possible.
+            When we
+            started this company, we wanted to break down monopolist activities of tech giants and false claims. We
+            are
+            passionate about our work and hope to provide the best experience a person could ask for. One way we do
+            this, is to provide comprehensive guides and a capable community where modding is made widespread.
+            Replacement parts can be bought both at our online webstore and retailers across Americas. We also
+            provide a
+            full 100% money back guarantee within 14 days if you are not satisfied. <br>
+            Our products are made with the best, most reliable technology and materials going through rigorous QC. <br>
+        </p>
+        <button id="AboutOurCompanyButton"  onclick="myFunction()"><img id='getImage' height="50px"
+                src="buttons/pauseButton.png"></button>
+    </div>
+
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("AboutOurCompanyButton");
+        var Image_Id = document.getElementById('getImage');
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                Image_Id.src = "buttons/pauseButton.png";
+            } else {
+                video.pause();
+                Image_Id.src = "buttons/playButton.png";
+            }
+        }
+    </script>
+
+
+    <div class="AboutUS" id="gotoaboutus">
+        <H1>About Us</H1>
+        <img src="ourceo.png" alt="our ceo">
+        <p style="text-align:justify;padding-top:10px;padding-bottom: 15px;">We are a Silicon Valley based manufacturing
+            Technological products.
+            Lead by the CEO David Smith and Raghav Aggarwal
+            and Ayush Verma as the lead of the techncial team. Tamim Ashraf executing marketing material.
+            Our technical team puts in ample effort to design quality products.
+            Our motive is to abolish the monoply of tech giants by introducing an open community technology redesigned.
+            We also take a lot of measures to ensure that our staff is happy, including benifits such as high salaries,
+            bonuses and
+            extreme casual enviorment in the office with no pressure so they do their best.</p>
+    </div>
+
+
+    <audio id="BGmusic" autoplay loop >
+        <source src="audiobg.mp3">
+    </audio>
+    
+    <button id='AudioBtn' onclick="amyFunction()"><img id='musicImg' height="50px" src="buttons/play1.png"></button>
+
+    <script src="Audio.js"></script>
+
+    <div class="sticky">
+        Copyright © 2022, Koffee Jones, Inc. All Rights Reserved. | <a target="_blank"
+            href="https://tinyurl.com/yeyvwd5y">Privacy Policy </a>| Terms of Service
+    </div>
+
+    <div class="fixed">
+        LIMITED TIME SALE! 50% OFF AT ALL PRODUCTS! LIMITED TIME SALE!
+    </div>
+</body>
+
+</html>

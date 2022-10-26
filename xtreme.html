@@ -1,0 +1,260 @@
+<html>
+
+<head>
+    <link rel="icon" href="Website_LOGO_Final.png" type="image/x-icon">
+    <title> Xtreme Motherboards - Digital: Technology redesigned </title>
+
+    <link rel="stylesheet" href="TopBarCSS.css">
+    <link rel="stylesheet" href="BarCSS.css">
+    <link rel="stylesheet" href="Audio.css">
+    <link rel="stylesheet" href="specifications.css">
+    <link rel="stylesheet" href="ProductsSlideshow.css">
+    <link rel="stylesheet" href="SpecsTable.css">
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            color: #90e0ef;
+            text-decoration: none;
+        }
+
+        #background-video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 4.3vw;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 400;
+            color: #3eb7dc;
+        }
+
+        h3 {
+            font-size: 2.4vw;
+            font-family: "machinen", "jerseym54", "Geneva", "Roboto", "Helvetica", "Arial", "Microsoft JhengHei", sans-serif;
+            font-weight: 1400;
+
+            color: #f5ba00;
+        }
+
+        p {
+            font-size: 1.75vw;
+            font-family: 'Courier New', Courier, monospace;
+            color: 3eb7dc;
+            font-weight: 600;
+        }
+
+        div.XtremeMotherboards p {
+            top: 9vw;
+        }
+
+        #myVideo {
+            width: 100%;
+        }
+
+        .wrap-flex2 {
+            display: flex;
+            width: 99vw;
+        }
+    </style>
+</head>
+
+<body bgcolor="#8ecae6">
+    <video id="background-video" autoplay loop muted>
+        <source src="Background.mp4" type="video/mp4">
+    </video>
+    <div class="wrap-flex">
+        <div id="topBar">
+            <table>
+                <tr>
+                    <td id="logo"></td>
+                    <td id="topText"><a href="Digital.html">Home</a></td>
+                    <td id="topText"><a href="#gotoaboutus">About Us</a></td>
+                    <td id="topText"><a
+                            href="Support.html">Support</a></td>
+                    <td id="topText">
+                        <div class="dropdown">
+                            <button class="dropbtn">Products</button>
+                            <div class="dropdown-content">
+                                <a href="Digital.html">Xtreme Motherboards</a>
+                                <a href="hiRes.html">HiRes Displays</a>
+                                <a href="velocity.html">Thermal Velocity Products</a>
+                            </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="rectangle">
+            <a id="buyNowText" href="http://www.google.com">BUY NOW</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var a = document.getElementById("buyNowText");
+            a.onclick = function () {
+
+                window.alert("We require $50 Mil to start actual development. This is a concept.")
+
+                return false;
+            }
+        }</script>
+
+    <br><br>
+
+    <div class="XtremeMotherboards">
+        <video autoplay muted loop id="myvideo">
+            <source src="Motherboard.mp4" type="video/mp4">
+        </video>
+
+        <h1>Xtreme Motherboards</h1>
+        <h3>STRONGER. MEANER. RELIABLE.</h3>
+        <p>
+            The Xtreme X570 WIFI II distills essential elements of the latest AMD/Intel platform and combines them
+            with
+            game-ready features and proven durability. Engineered with military-grade components, an upgraded power
+            solution
+            and a comprehensive set of cooling options, this motherboard delivers rock-solid performance with
+            unwavering
+            gaming stability.
+
+            When you build with a DIGITAL Gaming motherboard, you also benefit from our thermal velocity cooled
+            components
+            with collaboration with trusted industry partners that ensures easier building, best compatibility, and
+            complementary aesthetics from components to case.
+    </div>
+    </div>
+
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+        var Image_Id = document.getElementById('getImage');
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                Image_Id.src = "pause.png";
+            } else {
+                video.pause();
+                Image_Id.src = "play.png";
+            }
+        }
+    </script>
+    <br>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade-in" style="background-image:url('Motherboards/1.png');">
+            <div class="text">Upcoming motherboard renders!</div>
+        </div>
+
+        <div class="mySlides fade-in" style="background-image:url('Motherboards/2.png');">
+            <div class="text">Upcoming motherboard renders!</div>
+        </div>
+
+        <div class="mySlides fade-in" style="background-image:url('Motherboards/3.png');">
+            <div class="text">Upcoming motherboard renders!</div>
+        </div>
+
+        <div class="mySlides fade-in" style="background-image:url('Motherboards/4.png');">
+            <div class="text">Upcoming motherboard renders!</div>
+        </div>
+
+        <div class="mySlides fade-in" style="background-image:url('Motherboards/5.jpg');background-position-y: bottom;">
+            <div class="text">Upcoming motherboard renders!</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="index" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <script src="Slideshow.js"></script>
+    <BR><BR><BR>
+
+    <table class="specs">
+        <tr>
+            <td id="heading"> AMD B550 (Ryzen AM4) ATX gaming motherboard with PCIe 4.0, dual M.2, 10 DrMOS
+                power
+                stages, Wi-Fi 6,
+                2.5 Gb Ethernet, HDMI, DisplayPort, SATA 6 Gbps, USB 3.2 Gen 2 Type-A and Type-C, Thunderbolt™ 3 header,
+                and Aura Sync RGB lighting support</th>
+            <td rowspan="2"> <img src="Specs.jpg" width="500px"></th>
+        </tr>
+        <tr>
+            <td id="content">
+                <strong>-AMD AM4 socket:</strong> Ready for Ryzen™ 5000 Series/ 4000 G-Series/ 3000 Series Desktop
+                Processors<br>
+                <strong>-Enhanced power solution:</strong> 8+2 DrMOS power stages, ProCool sockets, military-grade
+                Digital components, and Digi+ VRM for maximum durability<br>
+                <strong>-Comprehensive cooling:</strong> VRM heatsink, PCH fanless heatsink, Dual M.2 heatsink, hybrid
+                fan headers and Fan Xpert 4 utility <br>
+                <strong>-Next-gen connectivity:</strong> PCIe 4.0 M.2, USB 3.2 Gen 2 Type-A and Type-C, Thunderbolt™ 3
+                header support<br>
+                <strong>-Made for online gaming:</strong> Wi-Fi 6, 2.5 Gb Ethernet, and TUF LANGuard<br>
+                <strong>-AI noise-canceling microphone:</strong> provides crystal-clear in-game voice communication
+            </td>
+        </tr>
+    </table>
+    <table class="specs">
+        <tr>
+            <td rowspan="2"> <img src="Specs.jpg" width="500px"></th>
+            <td id="heading"> Intel® B460 (LGA 1200) ATX gaming motherboard with dual M.2, 8 power stages, Intel® WiFi
+                6, HDMI, DisplayPort, SATA 6Gbps, USB 3.2 Gen 2 port, and Aura Sync RGB Lighting</th>
+        </tr>
+        <tr>
+            <td id="content">
+                <strong>-Intel® LGA 1200 socket:</strong> Ready for 10th Gen Intel® Core™ processors<br>
+                <strong>-Enhanced power solution:</strong> 6+1+1 power stages, military-grade TUF components, and Digi+
+                VRM for maximum durability<br>
+                <strong>-Comprehensive cooling:</strong> VRM heatsink, M.2 heatsink, PCH heatsink, hybrid fan headers
+                and Fan Xpert 4 <br>
+                <strong>-Made for online gaming:</strong> PIntel® WiFi 6, Intel® Ethernet Connection I219-V, TUF
+                LANGuard and TurboLAN technology<br>
+                <strong>-Realtek S1200A codec:</strong> Pristine audio quality with unprecedented 108 dB signal-to-noise
+                ratio for stereo line out and 103 dB SNR for line in<br>
+                <strong>-Aura Sync RGB Lighting:</strong> Synchronizable LED effects across a vast portfolio of
+                compatible PC gear, including addressable RGB strips
+            </td>
+        </tr>
+    </table>
+    <br><br>
+
+    <audio id="BGmusic" autoplay loop>
+        <source src="audiobg.mp3">
+    </audio>
+
+    <button id='AudioBtn' onclick="amyFunction()"><img id='musicImg' height="50px" src="buttons/play1.png"></button>
+
+    <script src="Audio.js"></script>
+
+    <div class="sticky">
+        Copyright © 2022, Digital Inc. All Rights Reserved. | <a target="_blank"
+            href="https://tinyurl.com/yeyvwd5y">Privacy Policy </a>| Terms of Service
+    </div>
+
+    <div class="fixed">
+        LIMITED TIME SALE! 50% OFF AT ALL PRODUCTS! LIMITED TIME SALE!
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<html>
+
+<head>
+    <link rel="icon" href="Website_LOGO_Final.png" type="image/x-icon">
+    <title> Support - Digital: Technology redesigned </title>
+
+    <link rel="stylesheet" href="TopBarCSS.css">
+    <link rel="stylesheet" href="BarCSS.css">
+    <link rel="stylesheet" href="Audio.css">
+    <link rel="stylesheet" href="specifications.css">
+    <link rel="stylesheet" href="ProductsSlideshow.css">
+    <link rel="stylesheet" href="SpecsTable.css">
+    <link rel="stylesheet" href="SupportForm.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+            box-sizing: border-box;
+        }
+
+        #set-height {
+            display: block;
+        }
+
+        #v0 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        a {
+            color: #90e0ef;
+            text-decoration: none;
+        }
+
+        #background-video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        .content {
+            padding: 20px;
+            position: sticky;
+            width: 100%;
+            height: 300px;
+            top: 33.3%;
+        }
+
+        h1 {
+
+            padding: 10px 15px;
+            display: inline-block;
+
+            background: #023e8a;
+            border-radius: 5px;
+
+            font-size: 3.5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #3eb7dc;
+        }
+
+        p {
+            margin-top: 10px;
+            margin-right: 60px;
+            padding: 10px;
+
+            background: rgba(0, 0, 0, .5);
+            border-radius: 5px;
+
+            font-size: 1.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            color: #3eb7dc;
+            font-weight: 600;
+        }
+
+        section:nth-of-type(1) {
+            height: 1000px;
+        }
+
+        section:nth-of-type(2) {
+            height: 1000px;
+        }
+
+        section:nth-of-type(3) {
+            height: 1000px;
+        }
+
+        section:nth-of-type(4) {
+            height: 1000px;
+        }
+
+        section:nth-of-type(5) {
+            height: 1000px;
+        }
+
+        #myVideo {
+            width: 100%;
+        }
+
+        .wrap-flex2 {
+            display: flex;
+            width: 99vw;
+        }
+    </style>
+</head>
+
+<body bgcolor="#8ecae6">
+    <video id="v0" , tabindex="0" , autobuffer preload>
+        <source type="video/mp4" src="VideoBG.mp4">
+        </source>
+    </video>
+
+
+    <div class="wrap-flex" style="position:fixed;top:0px;width:100%">
+        <div id="logo"></div>
+        <div id="topBar">
+            <table>
+                <tr>
+                    <td id="topText"><a href="Digital.html">Home</a></td>
+                    <td id="topText"><a href="#gotoaboutus">About Us</a></td>
+                    <td id="topText"><a href="Support.html">Support</a></td>
+                    <td id="topText">
+                        <div class="dropdown">
+                            <button class="dropbtn">Products</button>
+                            <div class="dropdown-content">
+                                <a href="xtreme.html">Xtreme Motherboards</a>
+                                <a href="hiRes.html">HiRes Displays</a>
+                                <a href="velocity.html">Thermal Velocity Products</a>
+                            </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="rectangle">
+            <a id="buyNowText" href="http://www.google.com">BUY NOW</a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var a = document.getElementById("buyNowText");
+            a.onclick = function () {
+
+                window.alert("We require $50 Mil to start actual development. This is a concept.")
+
+                return false;
+            }
+        }</script>
+
+    <section class="container">
+        <div class="content">
+            <h1>Product Support Page</h1>
+            <p>This is the support website for Digital Technolgies. You will find some tips if your products is not
+                working properly. Further if you require support assiatance, please fill the support form below and we
+                will contact you within 7 business days. </p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h1>Xtreme Motherboards</h1>
+            <p>Make sure that the power cables are properly connected.<br> Ensure BIOS versions are compatible with
+                installed CPU. BIOS flashback recommended. <br> CPU Thermal Application is poor. Please replace thermal
+                compoound and try again. <br> Faulty components may lead to improper startup. <br> Physical/Electrical
+                damage. Motherboard falling or an electrical failure can brick your motherboard. Please contact support
+                for further help. <br> Faulty Product from factory.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h1>Hi-Res Displays</h1>
+            <p>Try reinserting or replacing power cord with another power cable. <br> Verify the monitor has power by
+                looking for a blue, green, or orange light which can be found on the front or the bottom of the
+                monitor's bezel. <br> If you can view your monitor's settings menu even though the screen is blank, you
+                likely need to turn up the brightness and contrast. <br> If you have followed the recommendations above
+                and still no picture appears, your computer may have either a bad monitor, video card (graphics card),
+                or motherboard. Please contact support.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h1>Thermal Velocity Products</h1>
+            <p>Very often if your water cooler is not working, the problem can be traced to the power supply. So as a
+                first step, check that it is properly plugged in at the wall and the mains power is turned on. If it is
+                switched on but not dispensing water, the next step is to check your water supply. Ensure adequate water
+                is filled. <br> Faulty pump may lead to no water flow. <br> Improper thermal paste application may lead
+                to worse performance, try reinstalling thermal greese. <br> Ensure your water loop is dust free and
+                water is clean of any bacteria.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h1>Other</h1>
+            <p>It is possible that the tips mentioned above might not be helpful and we are sorry for the inconvenience
+                regretted. For some reason if support is not preferred then try searching the internet and forums for
+                solutions. We hope that you are able to find what you are looking for and reslove your problem. <br>
+                Thank You for visiting our website.</p>
+        </div>
+    </section>
+
+    <script>
+
+        window.onload = function () {
+            var form = document.querySelector("form");
+            form.onsubmit = submitted.bind(form);
+        }
+
+        function submitted(event) {
+            window.alert("Your response has unfortunately not been submitted as this project is limited. Also would require a web hosting service to save input there.")
+        }
+    </script>
+
+    <div class="form">
+        <form>
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="India">India</option>
+                <option value="Middle East">Middle East</option>
+                <option value="Europe">Europe</option>
+                <option value="Australia">Australia</option>
+                <option value="USA">USA</option>
+                <option value="North America">North America</option>
+                <option value="Antarctica/Arctic">Antarctica/Arctic</option>
+                <option value="Iron hills of Dain">Iron hills of Dain</option>
+                <option value="Westeros">Westeros</option>
+                <option value="Upside Down">Upside Down</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+    <div id="set-height"></div>
+
+
+    <script>
+        var frameNumber = 0, // start video at frame 0
+            // lower numbers = faster playback
+            playbackConst = 1000,
+            // get page height from video duration
+            setHeight = document.getElementById("set-height"),
+            // select video element         
+            vid = document.getElementById('v0');
+        // var vid = $('#v0')[0]; // jquery option
+
+        // dynamically set the page height according to video length
+        vid.addEventListener('loadedmetadata', function () {
+            setHeight.style.height = Math.floor(1) * playbackConst + "px";
+        });
+
+
+        // Use requestAnimationFrame for smooth playback
+        function scrollPlay() {
+            var frameNumber = window.pageYOffset / playbackConst;
+            vid.currentTime = frameNumber;
+            window.requestAnimationFrame(scrollPlay);
+        }
+
+        window.requestAnimationFrame(scrollPlay);
+    </script>
+
+    <audio id="BGmusic" autoplay loop>
+        <source src="audiobg.mp3">
+    </audio>
+
+    <button id='AudioBtn' onclick="amyFunction()"><img id='musicImg' height="50px" src="buttons/play1.png"></button>
+
+    <script src="Audio.js"></script>
+
+    <div class="sticky">
+        Copyright © 2022, Koffee Jones, Inc. All Rights Reserved. | <a target="_blank"
+            href="https://tinyurl.com/yeyvwd5y">Privacy Policy </a>| Terms of Service
+    </div>
+
+    <div class="fixed">
+        LIMITED TIME SALE! 50% OFF AT ALL PRODUCTS! LIMITED TIME SALE!
+    </div>
+</body>
+
+</html>

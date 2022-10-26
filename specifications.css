@@ -1,0 +1,38 @@
+div.XtremeMotherboards {
+    margin: 25px 35px 25px 20px;
+    position: relative;
+
+    border: solid white;
+}
+
+div.XtremeMotherboards h1,
+h3,
+h4,
+p {
+    padding: 20px;
+    position: absolute;
+}
+
+div.XtremeMotherboards h1 {
+    top: 0;
+}
+
+div.XtremeMotherboards h3 {
+    top: 5.5vw;
+}
+
+#heading1 {
+    top: 9vw;
+}
+
+#para1 {
+    top: 11.5vw;
+}
+
+#heading2{
+    top:28vw;
+}
+
+#para2{
+    top:30.5vw;
+}
